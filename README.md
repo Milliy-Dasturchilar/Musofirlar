@@ -1,3 +1,3 @@
 # Musofir.uz
 
-drghdgdrf
+[Musofirlar.uz](https://www.musofirlar.uz/)
