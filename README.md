@@ -1,3 +1,3 @@
 # Musofir.uz
 
-[Musofirlar.uz](https://wwww.musofirlar.uz)
+[Musofirlar.uz](https://www.musofirlar.uz/)
