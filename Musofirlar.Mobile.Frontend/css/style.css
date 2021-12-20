@@ -60,9 +60,6 @@ a {
     padding: 15px 21px 15px 15px;
     border-radius: 12px;
     margin-top: 22px;
-}
-
-.menu-card__link {
     display: flex;
     align-items: center;
 }
@@ -92,4 +89,20 @@ a {
 
 .flat-card {
     background-color: #82BCF0;
+    box-shadow: 4px 4px 4px rgba(130, 188, 240, 0.6);
+}
+
+.work-card {
+    background: rgba(241, 175, 106, 0.86);
+    box-shadow: 4px 4px 4px rgba(243, 186, 127, 0.6);
+}
+
+.canteen-card {
+    background: rgba(234, 101, 140, 0.86);
+    box-shadow: 4px 4px 4px rgba(237, 123, 156, 0.6);
+}
+
+.embassy-card {
+    background: rgba(201, 125, 239, 0.86);
+    box-shadow: 4px 4px 4px rgba(209, 143, 241, 0.6);
 }
