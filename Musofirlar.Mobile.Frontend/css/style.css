@@ -44,6 +44,11 @@ a {
     background-color: #fff;
 }
 
+.main-button:active {
+    background-color: #82BCF0;
+    color: #fff;
+}
+
 /* CONTAINER */
 .container {
     width: 100%;
