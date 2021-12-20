@@ -18,6 +18,7 @@
     height: 318px;
     scroll-snap-type: both mandatory;
     scroll-padding: 1rem;
+    overflow-y: hidden;
 }
 
 .active {
