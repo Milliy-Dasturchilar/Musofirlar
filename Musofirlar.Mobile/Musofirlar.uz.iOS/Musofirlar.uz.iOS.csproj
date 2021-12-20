@@ -142,4 +142,19 @@
       <Name>Musofirlar.uz</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\canteen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\rent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\work.png" />
+  </ItemGroup>
 </Project>

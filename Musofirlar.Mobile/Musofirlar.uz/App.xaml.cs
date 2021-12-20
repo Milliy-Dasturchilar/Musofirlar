@@ -1,8 +1,8 @@
-﻿using Musofirlar.uz.Services;
-using Musofirlar.uz.Views;
+﻿using Musofirlar.uz.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 namespace Musofirlar.uz
 {
@@ -13,7 +13,6 @@ namespace Musofirlar.uz
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 
@@ -27,6 +26,7 @@ namespace Musofirlar.uz
 
         protected override void OnResume()
         {
+            
         }
     }
 }
