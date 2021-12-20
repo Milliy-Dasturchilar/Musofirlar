@@ -1,4 +1,4 @@
-# Musofir.uz
+# Musofirlar.uz
 
 [Musofirlar.uz](https://www.musofirlar.uz/)
 
