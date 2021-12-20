@@ -1,6 +1,6 @@
 console.log("Template is working...");
 
-const slider = document.querySelector('.gallery');
+const slider = document.querySelector('.cards');
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -23,7 +23,7 @@ slider.addEventListener('mousemove', e => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
-    const SCROLL_SPEED = 3;
+    const SCROLL_SPEED = 0.5;
     const walk = (x - startX) * SCROLL_SPEED;
     slider.scrollLeft = scrollLeft - walk;
 });
