@@ -23,7 +23,7 @@ slider.addEventListener('mousemove', e => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
-    const SCROLL_SPEED = 1;
+    const SCROLL_SPEED = 0.5;
     const walk = (x - startX) * SCROLL_SPEED;
     slider.scrollLeft = scrollLeft - walk;
 });
