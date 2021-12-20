@@ -137,11 +137,6 @@
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
-    <BundleResource Include="canteen.png" />
-    <BundleResource Include="flag.png" />
-    <BundleResource Include="home.png" />
-    <BundleResource Include="rent.png" />
-    <BundleResource Include="work.png" />
     <Content Include="xamarin_logo.png" />
   </ItemGroup>
   <ItemGroup>

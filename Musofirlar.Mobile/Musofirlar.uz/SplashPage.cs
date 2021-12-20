@@ -35,7 +35,7 @@ namespace Musofirlar.uz
 
             await splashImage.ScaleTo(1, 1000);
 
-            await splashImage.RotateTo(360, 300, Easing.Linear);
+            await splashImage.RotateTo(720, 500, Easing.Linear);
             await splashImage.ScaleTo(0, 500, Easing.Linear);
 
 

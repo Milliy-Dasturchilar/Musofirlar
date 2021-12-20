@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace Musofirlar.uz.Views
 {
@@ -7,16 +8,6 @@ namespace Musofirlar.uz.Views
         public HomePage()
         {
             InitializeComponent();
-        }
-
-        void webviewNavigating(object sender, WebNavigatingEventArgs e)
-        {
-            labelLoading.IsVisible = true;
-        }
-
-        void webviewNavigated(object sender, WebNavigatedEventArgs e)
-        {
-            labelLoading.IsVisible = false;
         }
     }
 }

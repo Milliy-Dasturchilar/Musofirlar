@@ -10,14 +10,100 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <StackLayout>
-        <!--Loading label should not render by default.-->
-        <Label x:Name="labelLoading" IsVisible="false" 
-               Text="Loading..."
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               FontSize="18"/>
-        <WebView HeightRequest="1000" WidthRequest="1000" Source="https://musofirlar-mobile.netlify.app/flat" Navigated="webviewNavigated" Navigating="webviewNavigating" />
-    </StackLayout>
+
+    <ScrollView HeightRequest="680">
+        <Grid Margin="0,0,0,12">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.35*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Label FontSize="20" VerticalTextAlignment="End" Margin="16,0,0,5"
+                   FontAttributes="Bold" TextColor="#110A3F">Biz bilan nimalarga erishasiz?</Label>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Frame Margin="16,6,12,6" BackgroundColor="#82BCF0" Opacity="0.8" CornerRadius="12" >
+                </Frame>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image HeightRequest="30" WidthRequest="30" Grid.Column="0" Margin="26,20,20,20" Source="img1.png" />
+
+                    <StackLayout Margin="-10,20, 20, 20" Grid.Column="1">
+                        <Label Text="Ijara uylar" TextColor="Black" 
+                           FontAttributes="Bold" FontSize="16"></Label>
+                        <Label TextColor="Black"  FontSize="14"
+                        Text="MUSOFIRLAR.UZ yordamida o'zingiz uchun qulay va hamyonbop ijara uylarini topishingiz mumkin!"></Label>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Frame Margin="16,6,12,6" BackgroundColor="#F1AF6A" Opacity="0.8" CornerRadius="12" >
+                </Frame>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image HeightRequest="30" WidthRequest="30"  Grid.Column="0" Margin="26,20,20,20" Source="img2.png" />
+
+                    <StackLayout Margin="-10,20, 20, 20" Grid.Column="1">
+                        <Label Text="Ish topish" TextColor="Black" 
+                           FontAttributes="Bold" FontSize="16"></Label>
+                        <Label TextColor="Black"  FontSize="14"
+                        Text="MUSOFIRLAR.UZ yordamida o'zingiz uchun qulay va serdaromad ish topishingiz mumkin!"></Label>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Frame Margin="16,6,12,6" BackgroundColor="#EA658C" Opacity="0.8" CornerRadius="12" >
+                </Frame>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image HeightRequest="30" WidthRequest="30"  Grid.Column="0" Margin="26,20,20,20" Source="img3.png" />
+
+                    <StackLayout Margin="-10,20, 20, 20" Grid.Column="1">
+                        <Label Text="O'zbek oshxonasi" TextColor="Black" 
+                           FontAttributes="Bold" FontSize="16"></Label>
+                        <Label TextColor="Black"  FontSize="14"
+                        Text="MUSOFIRLAR.UZ yordamida o'zbek oshxonasining milliy taomlari tayyorlanadigan joylarni topishingiz mumkin!
+"></Label>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Frame Margin="16,6,12,6" BackgroundColor="#C97DEF" Opacity="0.8" CornerRadius="12" >
+                </Frame>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image HeightRequest="30" WidthRequest="30"  Grid.Column="0" Margin="26,20,20,20" Source="img4.png" />
+
+                    <StackLayout Margin="-10,20, 20, 20" Grid.Column="1">
+                        <Label Text="Elchixonalar" TextColor="Black" 
+                           FontAttributes="Bold" FontSize="16"></Label>
+                        <Label TextColor="Black"  FontSize="14"
+                        Text="MUSOFIR.BIZ yordamida o'zingiz uchun eng yaqin elchixona va konsulxonalarni topishingiz mumkin!"></Label>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+        </Grid>
+    </ScrollView>
 
 </ContentPage>
