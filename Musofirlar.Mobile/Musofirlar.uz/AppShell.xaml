@@ -4,13 +4,7 @@
        xmlns:local="clr-namespace:Musofirlar.uz.Views"
        Title="Musofirlar.uz"
        x:Class="Musofirlar.uz.AppShell">
-
-    <!--
-        The overall app visual hierarchy is defined here, along with navigation.
     
-        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
-    -->
-
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
@@ -30,17 +24,11 @@
     </Shell.Resources>
 
     <TabBar>
-        <ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Bosh sahifa" Icon="home.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
+        <ShellContent Title="Ijara uylar" Icon="rent.png" ContentTemplate="{DataTemplate local:RentPage}" />
+        <ShellContent Title="Ish topish" Icon="work.png" ContentTemplate="{DataTemplate local:WorkPage}" />
+        <ShellContent Title="Oshxonalar" Icon="canteen.png" ContentTemplate="{DataTemplate local:CanteenPage}" />
+        <ShellContent Title="Elchixonalar" Icon="flag.png" ContentTemplate="{DataTemplate local:EmbassyPage}" />
     </TabBar>
-
-    <!--
-        If you would like to navigate to this content you can do so by calling
-        await Shell.Current.GoToAsync("//LoginPage");
-    -->
-    <TabBar>
-        <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
-    </TabBar>
-
 
 </Shell>

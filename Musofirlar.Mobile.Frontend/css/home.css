@@ -1,0 +1,59 @@
+.main-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #110A3F;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 2px;
+}
+
+.menu-card {
+    padding: 15px 21px 15px 15px;
+    border-radius: 12px;
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-card__images {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+.menu-card__title {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu-card__description {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-top: 12px;
+    color: #000;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.flat-card {
+    background-color: #82BCF0;
+    box-shadow: 4px 4px 4px rgba(130, 188, 240, 0.6);
+}
+
+.work-card {
+    background: rgba(241, 175, 106, 0.86);
+    box-shadow: 4px 4px 4px rgba(243, 186, 127, 0.6);
+}
+
+.canteen-card {
+    background: rgba(234, 101, 140, 0.86);
+    box-shadow: 4px 4px 4px rgba(237, 123, 156, 0.6);
+}
+
+.embassy-card {
+    background: rgba(201, 125, 239, 0.86);
+    box-shadow: 4px 4px 4px rgba(209, 143, 241, 0.6);
+}
