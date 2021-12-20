@@ -4,10 +4,14 @@
              x:Class="Musofirlar.uz.Views.WorkPage"
              Title="Ish topish">
 
-    <Grid>
-        <Label>
-            Ish topish
-        </Label>
-    </Grid>
+    <StackLayout>
+        <!--Loading label should not render by default.-->
+        <Label x:Name="labelLoading" IsVisible="false" 
+               Text="Loading..."
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="18"/>
+        <WebView HeightRequest="1000" WidthRequest="1000" Source="http://musofirlar.pythonanywhere.com/mobile/work" Navigated="webviewNavigated" Navigating="webviewNavigating" />
+    </StackLayout>
     
 </ContentPage>

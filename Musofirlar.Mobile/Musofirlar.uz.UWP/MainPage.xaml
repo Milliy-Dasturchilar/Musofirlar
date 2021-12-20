@@ -6,7 +6,7 @@
     xmlns:local="using:Musofirlar.uz.UWP"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <ScrollBar Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+    </ScrollBar>
 </forms:WindowsPage>

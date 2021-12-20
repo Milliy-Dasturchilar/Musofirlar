@@ -4,8 +4,14 @@
              x:Class="Musofirlar.uz.Views.EmbassyPage"
              Title="Elchixona va konsulxonalar">
 
-    <Grid>
-        <Label>EMbassy</Label>
-    </Grid>
+    <StackLayout>
+        <!--Loading label should not render by default.-->
+        <Label x:Name="labelLoading" IsVisible="false" 
+               Text="Loading..."
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="18"/>
+        <WebView HeightRequest="1000" WidthRequest="1000" Source="http://musofirlar.pythonanywhere.com/mobile/embassy" Navigated="webviewNavigated" Navigating="webviewNavigating" />
+    </StackLayout>
     
 </ContentPage>
