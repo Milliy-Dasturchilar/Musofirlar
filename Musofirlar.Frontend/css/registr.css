@@ -35,6 +35,10 @@
   margin-bottom: 0;
 }
 
+.kirish-img{
+  margin-bottom: -5px;
+}
+
 .form_input,
 .form_div {
   max-width: 350px;
