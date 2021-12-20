@@ -2,11 +2,21 @@
     height: 240px;
 }
 
+.cards2 {
+    height: 320px;
+    grid-template-columns: repeat(7, 300px);
+}
+.card {
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
 .card__top,
 .card__bottom {
     border-left: 13px solid #FF7C7C;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 10px 15px;
+    display: block;
 }
 
 .card__bottom {
@@ -17,6 +27,35 @@
 .card__title {
     font-size: 18px;
     font-weight: 700;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
+}
+
+.card__title2 {
+    color: #0082DD;
+}
+
+.card__header {
+    background-color: #0078D4;
+    display: flex;
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__img-position {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+}
+
+.card__posted-time {
+    font-size: 12px;
+    color: #828282;
+    margin-top: 8px;
 }
 
 .card__prices {
@@ -32,6 +71,25 @@
     margin-top: 15px;
     display: flex;
     width: 100%;
+}
+
+.card__body {
+    padding: 12px 26px;
+}
+
+.card__button {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.hashtegs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.hashtegs li {
+    margin: 5px 5px 5px 0;
 }
 
 .search-group > input {
