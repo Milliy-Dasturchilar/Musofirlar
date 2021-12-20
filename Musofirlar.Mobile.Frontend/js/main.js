@@ -1,6 +1,6 @@
 console.log("Template is working...");
 
-const slider = document.querySelector('.gallery');
+const slider = document.querySelector('.cards');
 let isDown = false;
 let startX;
 let scrollLeft;
