@@ -99,7 +99,7 @@
                         <Label Text="Elchixonalar" TextColor="Black" 
                            FontAttributes="Bold" FontSize="16"></Label>
                         <Label TextColor="Black"  FontSize="14"
-                        Text="MUSOFIR.BIZ yordamida o'zingiz uchun eng yaqin elchixona va konsulxonalarni topishingiz mumkin!"></Label>
+                        Text="MUSOFIRLAR.UZ yordamida o'zingiz uchun eng yaqin elchixona va konsulxonalarni topishingiz mumkin!"></Label>
                     </StackLayout>
                 </Grid>
             </Grid>
