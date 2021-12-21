@@ -7,3 +7,8 @@ from .models import Canteen
 def canteen_home(request):
     canteens = Canteen.objects.all()
     return render(request, 'canteen/canteen.html', {'canteens': canteens})
+
+
+def mobile_canteen_home(request):
+    canteens = Canteen.objects.all()
+    return render(request, 'mobile/canteen.html', {'canteens': canteens})

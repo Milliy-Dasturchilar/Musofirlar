@@ -7,3 +7,8 @@ from .models import Work
 def work_home(request):
     works = Work.objects.all()
     return render(request, 'work/work.html', {'works': works})
+
+
+def mobile_work_home(request):
+    works = Work.objects.all()
+    return render(request, 'mobile/work.html', {'works': works})

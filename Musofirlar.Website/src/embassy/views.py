@@ -8,3 +8,9 @@ from .models import Embassy
 def embassy_home(request):
     embassies = Embassy.objects.all()
     return render(request, 'embassy/embassy.html', {'embassies': embassies})
+
+
+def mobile_embassy_home(request):
+    embassies = Embassy.objects.all()
+    return render(request, 'mobile/embassy.html', {'embassies': embassies})
+
