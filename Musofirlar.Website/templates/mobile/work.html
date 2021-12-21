@@ -11,8 +11,7 @@
     <meta name="keywords" content="Some keywords here that belong to your web-page">
     <meta name="description" content="About your web-page">
 
-    <!-- ICON -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+  
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,17 +22,17 @@
     <title>CUSTOM TITLE</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="{% static 'mobile/css/slider.css' %}">
+    <link rel="stylesheet" href="{% static 'mobile/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'mobile/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'mobile/css/work.css' %}">
 </head>
 <body>
 <!-- MAIN CONTENT -->
 <main class="main-content">
     <div class="container main-content__container">
         <h2 class="main-title">
-            Top e’lonlar
+            Top e'lonlar
         </h2>
 
         <ul class="cards">
@@ -114,278 +113,18 @@
         <form class="search-group">
             <input type="text" id="search" autocomplete="False" placeholder="Qidirish uchun yozing . . . ">
             <button type="submit">
-                <img src="images/search-icon.png" width="30" height="30">
+                <img src="{% static 'mobile/images/search-icon.png' %}" width="30" height="30">
             </button>
         </form>
 
         <ul class="cards cards2">
             <li class="card card__border">
                 <div class="card__header">
-                    <img src="images/location-icon.png">
+                    <img src="{% static 'mobile/images/location-icon.png' %}">
                     <h3 class="card__title margin-left-10">
-                        O’zbekiston, Farg’ona
+                        O'zbekiston, Farg'ona
                     </h3>
-                    <img class="card__img-position" src="images/portfel-icon.png" width="48" height="48">
-                </div>
-                <div class="card__body">
-                    <h3 class="card__title card__title2">
-                        Firmaga qorovul kerak
-                    </h3>
-                    <p class="card__posted-time">
-                        21-dekabr 2021
-                    </p>
-                    <p class="card__prices">
-                        $200 - $800
-                    </p>
-                    <div class="card__footer">
-                        <ul class="hashtegs">
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card__button">
-                        <a href="#" class="main-button">Batafsil</a>
-                    </div>
-                </div>
-            </li>
-            <li class="card card__border">
-                <div class="card__header">
-                    <img src="images/location-icon.png">
-                    <h3 class="card__title margin-left-10">
-                        O’zbekiston, Farg’ona
-                    </h3>
-                    <img class="card__img-position" src="images/portfel-icon.png" width="48" height="48">
-                </div>
-                <div class="card__body">
-                    <h3 class="card__title card__title2">
-                        Firmaga qorovul kerak
-                    </h3>
-                    <p class="card__posted-time">
-                        21-dekabr 2021
-                    </p>
-                    <p class="card__prices">
-                        $200 - $800
-                    </p>
-                    <div class="card__footer">
-                        <ul class="hashtegs">
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card__button">
-                        <a href="#" class="main-button">Batafsil</a>
-                    </div>
-                </div>
-            </li>
-            <li class="card card__border">
-                <div class="card__header">
-                    <img src="images/location-icon.png">
-                    <h3 class="card__title margin-left-10">
-                        O’zbekiston, Farg’ona
-                    </h3>
-                    <img class="card__img-position" src="images/portfel-icon.png" width="48" height="48">
-                </div>
-                <div class="card__body">
-                    <h3 class="card__title card__title2">
-                        Firmaga qorovul kerak
-                    </h3>
-                    <p class="card__posted-time">
-                        21-dekabr 2021
-                    </p>
-                    <p class="card__prices">
-                        $200 - $800
-                    </p>
-                    <div class="card__footer">
-                        <ul class="hashtegs">
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card__button">
-                        <a href="#" class="main-button">Batafsil</a>
-                    </div>
-                </div>
-            </li>
-            <li class="card card__border">
-                <div class="card__header">
-                    <img src="images/location-icon.png">
-                    <h3 class="card__title margin-left-10">
-                        O’zbekiston, Farg’ona
-                    </h3>
-                    <img class="card__img-position" src="images/portfel-icon.png" width="48" height="48">
-                </div>
-                <div class="card__body">
-                    <h3 class="card__title card__title2">
-                        Firmaga qorovul kerak
-                    </h3>
-                    <p class="card__posted-time">
-                        21-dekabr 2021
-                    </p>
-                    <p class="card__prices">
-                        $200 - $800
-                    </p>
-                    <div class="card__footer">
-                        <ul class="hashtegs">
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card__button">
-                        <a href="#" class="main-button">Batafsil</a>
-                    </div>
-                </div>
-            </li>
-            <li class="card card__border">
-                <div class="card__header">
-                    <img src="images/location-icon.png">
-                    <h3 class="card__title margin-left-10">
-                        O’zbekiston, Farg’ona
-                    </h3>
-                    <img class="card__img-position" src="images/portfel-icon.png" width="48" height="48">
-                </div>
-                <div class="card__body">
-                    <h3 class="card__title card__title2">
-                        Firmaga qorovul kerak
-                    </h3>
-                    <p class="card__posted-time">
-                        21-dekabr 2021
-                    </p>
-                    <p class="card__prices">
-                        $200 - $800
-                    </p>
-                    <div class="card__footer">
-                        <ul class="hashtegs">
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="hashtag">
-                                    #quruvchi
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card__button">
-                        <a href="#" class="main-button">Batafsil</a>
-                    </div>
-                </div>
-            </li>
-            <li class="card card__border">
-                <div class="card__header">
-                    <img src="images/location-icon.png">
-                    <h3 class="card__title margin-left-10">
-                        O’zbekiston, Farg’ona
-                    </h3>
-                    <img class="card__img-position" src="images/portfel-icon.png" width="48" height="48">
+                    <img class="card__img-position" src="{% static 'mobile/images/portfel-icon.png' %}" width="48" height="48">
                 </div>
                 <div class="card__body">
                     <h3 class="card__title card__title2">
@@ -437,6 +176,6 @@
 </main>
 
 <!-- SCRIPT -->
-<script src="js/slider.js"></script>
+<script src="{% static 'mobile/js/slider.js' %}"></script>
 </body>
 </html>
