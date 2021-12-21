@@ -1,3 +1,7 @@
+{% load static %}
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +15,7 @@
     <meta name="keywords" content="Some keywords here that belong to your web-page">
     <meta name="description" content="About your web-page">
 
-    <!-- ICON -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,41 +26,41 @@
     <title>CUSTOM TITLE</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flat.css">
+    <link rel="stylesheet" href="{% static 'mobile/css/slider.css' %}">
+    <link rel="stylesheet" href="{% static 'mobile/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'mobile/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'mobile/css/flat.css' %}">
 </head>
 <body>
 <!-- MAIN CONTENT -->
 <main class="main-content">
     <div class="container main-content__container">
         <h2 class="main-title">
-            Top e’lonlar
+            Top e'lonlar
         </h2>
 
         <ul class="cards">
             <li class="card">
                 <div class="card__header">
-                    <img src="images/location-icon.png">
+                    <img src="{% static 'mobile/images/location-icon.png' %}">
                     <h3 class="card__title">
                         O’zbekiston, Farg’ona
                     </h3>
                 </div>
                 <div class="card__img">
-                    <img class="card__image" src="images/flat-card-image.png" width="221" height="157">
+                    <img class="card__image" src="{% static 'mobile/images/flat-card-image.png' %}" width="221" height="157">
                 </div>
                 <div class="card__footer">
                     <div class="card__price">
-                        <img src="images/price-icon.png" alt="price icon" width="15" height="15">
+                        <img src="{% static 'mobile/images/price-icon.png' %}" alt="price icon" width="15" height="15">
                         <span>200</span>
                     </div>
                     <div class="card__rooms">
-                        <img src="images/home-icon.png" alt="home icon" width="15" height="15">
+                        <img src="{% static 'mobile/images/home-icon.png' %}" alt="home icon" width="15" height="15">
                         <span>3 xonali</span>
                     </div>
                     <div class="card__rooms">
-                        <img src="images/step-icon.png" alt="step icon" width="15" height="15">
+                        <img src="{% static 'mobile/images/step-icon.png' %}" alt="step icon" width="15" height="15">
                         <span>2 - qavat</span>
                     </div>
                 </div>
@@ -72,31 +75,31 @@
         </h3>
 
         <div class="search-group">
-            <img class="search-bar" src="images/search-bar.png" alt="search bar">
+            <img class="search-bar" src="{% static 'mobile/images/search-bar.png' %}" alt="search bar">
         </div>
 
         <ul class="cards cards2">
             <li class="card">
                 <div class="card__header">
-                    <img src="images/location-icon.png">
+                    <img src="{% static 'mobile/images/location-icon.png' %}">
                     <h3 class="card__title">
                         O’zbekiston, Farg’ona
                     </h3>
                 </div>
                 <div class="card__img">
-                    <img class="card__image" src="images/flat-card-image.png" width="221" height="157">
+                    <img class="card__image" src="{% static 'mobile/images/flat-card-image.png' %}" width="221" height="157">
                 </div>
                 <div class="card__footer">
                     <div class="card__price">
-                        <img src="images/price-icon.png" alt="price icon" width="15" height="15">
+                        <img src="{% static 'mobile/images/price-icon.png' %}" alt="price icon" width="15" height="15">
                         <span>200</span>
                     </div>
                     <div class="card__rooms">
-                        <img src="images/home-icon.png" alt="home icon" width="15" height="15">
+                        <img src="{% static 'mobile/images/home-icon.png' %}" alt="home icon" width="15" height="15">
                         <span>3 xonali</span>
                     </div>
                     <div class="card__rooms">
-                        <img src="images/step-icon.png" alt="step icon" width="15" height="15">
+                        <img src="{% static 'mobile/images/step-icon.png' %}" alt="step icon" width="15" height="15">
                         <span>2 - qavat</span>
                     </div>
                 </div>
@@ -104,139 +107,27 @@
                     <a class="main-button">Batafsil</a>
                 </div>
             </li>
-            <li class="card">
+            
                 <div class="card__header">
-                    <img src="images/location-icon.png">
+                    <img src="{% static 'mobile/images/location-icon.png' %}">
                     <h3 class="card__title">
                         O’zbekiston, Farg’ona
                     </h3>
                 </div>
                 <div class="card__img">
-                    <img class="card__image" src="images/flat-card-image.png" width="221" height="157">
+                    <img class="card__image" src="{% static 'mobile/images/flat-card-image.png' %}" width="221" height="157">
                 </div>
                 <div class="card__footer">
                     <div class="card__price">
-                        <img src="images/price-icon.png" alt="price icon" width="15" height="15">
+                        <img src="{% static 'mobile/images/price-icon.png' %}" alt="price icon" width="15" height="15">
                         <span>200</span>
                     </div>
                     <div class="card__rooms">
-                        <img src="images/home-icon.png" alt="home icon" width="15" height="15">
+                        <img src="{% static 'mobile/images/home-icon.png' %}" alt="home icon" width="15" height="15">
                         <span>3 xonali</span>
                     </div>
                     <div class="card__rooms">
-                        <img src="images/step-icon.png" alt="step icon" width="15" height="15">
-                        <span>2 - qavat</span>
-                    </div>
-                </div>
-                <div class="card__button">
-                    <a class="main-button">Batafsil</a>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card__header">
-                    <img src="images/location-icon.png">
-                    <h3 class="card__title">
-                        O’zbekiston, Farg’ona
-                    </h3>
-                </div>
-                <div class="card__img">
-                    <img class="card__image" src="images/flat-card-image.png" width="221" height="157">
-                </div>
-                <div class="card__footer">
-                    <div class="card__price">
-                        <img src="images/price-icon.png" alt="price icon" width="15" height="15">
-                        <span>200</span>
-                    </div>
-                    <div class="card__rooms">
-                        <img src="images/home-icon.png" alt="home icon" width="15" height="15">
-                        <span>3 xonali</span>
-                    </div>
-                    <div class="card__rooms">
-                        <img src="images/step-icon.png" alt="step icon" width="15" height="15">
-                        <span>2 - qavat</span>
-                    </div>
-                </div>
-                <div class="card__button">
-                    <a class="main-button">Batafsil</a>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card__header">
-                    <img src="images/location-icon.png">
-                    <h3 class="card__title">
-                        O’zbekiston, Farg’ona
-                    </h3>
-                </div>
-                <div class="card__img">
-                    <img class="card__image" src="images/flat-card-image.png" width="221" height="157">
-                </div>
-                <div class="card__footer">
-                    <div class="card__price">
-                        <img src="images/price-icon.png" alt="price icon" width="15" height="15">
-                        <span>200</span>
-                    </div>
-                    <div class="card__rooms">
-                        <img src="images/home-icon.png" alt="home icon" width="15" height="15">
-                        <span>3 xonali</span>
-                    </div>
-                    <div class="card__rooms">
-                        <img src="images/step-icon.png" alt="step icon" width="15" height="15">
-                        <span>2 - qavat</span>
-                    </div>
-                </div>
-                <div class="card__button">
-                    <a class="main-button">Batafsil</a>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card__header">
-                    <img src="images/location-icon.png">
-                    <h3 class="card__title">
-                        O’zbekiston, Farg’ona
-                    </h3>
-                </div>
-                <div class="card__img">
-                    <img class="card__image" src="images/flat-card-image.png" width="221" height="157">
-                </div>
-                <div class="card__footer">
-                    <div class="card__price">
-                        <img src="images/price-icon.png" alt="price icon" width="15" height="15">
-                        <span>200</span>
-                    </div>
-                    <div class="card__rooms">
-                        <img src="images/home-icon.png" alt="home icon" width="15" height="15">
-                        <span>3 xonali</span>
-                    </div>
-                    <div class="card__rooms">
-                        <img src="images/step-icon.png" alt="step icon" width="15" height="15">
-                        <span>2 - qavat</span>
-                    </div>
-                </div>
-                <div class="card__button">
-                    <a class="main-button">Batafsil</a>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card__header">
-                    <img src="images/location-icon.png">
-                    <h3 class="card__title">
-                        O’zbekiston, Farg’ona
-                    </h3>
-                </div>
-                <div class="card__img">
-                    <img class="card__image" src="images/flat-card-image.png" width="221" height="157">
-                </div>
-                <div class="card__footer">
-                    <div class="card__price">
-                        <img src="images/price-icon.png" alt="price icon" width="15" height="15">
-                        <span>200</span>
-                    </div>
-                    <div class="card__rooms">
-                        <img src="images/home-icon.png" alt="home icon" width="15" height="15">
-                        <span>3 xonali</span>
-                    </div>
-                    <div class="card__rooms">
-                        <img src="images/step-icon.png" alt="step icon" width="15" height="15">
+                        <img src="{% static 'mobile/images/step-icon.png' %}" alt="step icon" width="15" height="15">
                         <span>2 - qavat</span>
                     </div>
                 </div>
@@ -250,6 +141,6 @@
 </main>
 
 <!-- SCRIPT -->
-<script src="js/slider.js"></script>
+<script src="{% static 'mobile/js/slider.js' %}"></script>
 </body>
 </html>
