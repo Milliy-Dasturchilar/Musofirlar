@@ -1,3 +1,6 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,9 +14,6 @@
     <meta name="keywords" content="Some keywords here that belong to your web-page">
     <meta name="description" content="About your web-page">
 
-    <!-- ICON -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
-
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +23,9 @@
     <title>CUSTOM TITLE</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/embassy.css">
+    <link rel="stylesheet" href="{% static 'mobile/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'mobile/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'mobile/css/embassy.css' %}">
 </head>
 
 <body>
@@ -34,40 +34,41 @@
 <main class="main-content">
     <div class="container main-content__container">
         <h2 class="main-title">
-            Sizga yaqin bo’lgan manzillar
+            Sizga yaqin bo'lgan manzillar
         </h2>
         <ul class="cards">
            <li class="card">
                <div class="card__header">
                    <h3 class="card__title">
-                       O‘zbekistonning Rossiya Federatsiyasidagi Elchixonasi
+                       O'zbekistonning Rossiya Federatsiyasidagi Elchixonasi
                    </h3>
                </div>
                <div class="card__image">
-                   <img src="images/embassy-card-image.png" width="268" height="215">
+                   <img src="{% static 'mobile/images/embassy-card-image.png' %}" width="268" height="215">
                </div>
                <div class="card__info">
                    <ul class="details">
                        <li class="detail">
-                           <img src="images/location-icon.png" width="25" height="25">
+
+                           <img src="{% static 'mobile/images/location-icon.png' %}" width="25" height="25">
                            <span class="detail__value">
-                               119017, 12 Pogorelskiy tor ko‘chasi, Moskva, Rossiya.
+                               119017, 12 Pogorelskiy tor ko'chasi, Moskva, Rossiya.
                            </span>
                        </li>
                        <li class="detail">
-                           <img src="images/internet-icon.png" width="25" height="25">
+                           <img src="{% static 'mobile/images/internet-icon.png' %}" width="25" height="25">
                            <span class="detail__value">
                                http://uzembassy.ru
                            </span>
                        </li>
                        <li class="detail">
-                           <img src="images/phone-icon.png" width="25" height="25">
+                           <img src="{% static 'mobile/images/phone-icon.png' %}" width="25" height="25">
                            <span class="detail__value">
                                +7-499 230-00-76
                            </span>
                        </li>
                        <li class="detail">
-                           <img src="images/telegram-icon.png" width="25" height="25">
+                           <img src="{% static 'mobile/images/telegram-icon.png' %}" width="25" height="25">
                            <span class="detail__value">
                                @UzKoRusBot
                            </span>
@@ -76,9 +77,9 @@
 
                    <div class="card__button">
                        <a class="main-button" href="https://www.google.com/maps/place/%D0%9F%D0%BE%D1%81%D0%BE%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE+%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B8+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@55.7326936,37.6207698,19.75z/data=!4m5!3m4!1s0x46b54b04eabcc165:0xd9aabb3c9ad697c3!8m2!3d55.7326659!4d37.6210017?shorturl=1">
-                           <img src="images/map-icon.png" width="26" height="26">
+                           <img src="{% static 'mobile/images/map-icon.png' %}" width="26" height="26">
                            <span>Xaritadan ko'rish</span>
-                           <img src="images/arrov-right-icon.png" width="21" height="13">
+                           <img src="{% static 'mobile/images/arrov-right-icon.png' %}" width="21" height="13">
                        </a>
                    </div>
 
@@ -87,34 +88,34 @@
             <li class="card">
                 <div class="card__header">
                     <h3 class="card__title">
-                        O‘zbekistonning Rossiya Federatsiyasidagi Elchixonasi
+                        O'zbekistonning Rossiya Federatsiyasidagi Elchixonasi
                     </h3>
                 </div>
                 <div class="card__image">
-                    <img src="images/embassy-card-image.png" width="268" height="215">
+                    <img src="{% static 'mobile/images/embassy-card-image.png' %}" width="268" height="215">
                 </div>
                 <div class="card__info">
                     <ul class="details">
                         <li class="detail">
-                            <img src="images/location-icon.png" width="25" height="25">
+                            <img src="{% static 'mobile/images/location-icon.png' %}" width="25" height="25">
                             <span class="detail__value">
-                               119017, 12 Pogorelskiy tor ko‘chasi, Moskva, Rossiya.
+                               119017, 12 Pogorelskiy tor ko'chasi, Moskva, Rossiya.
                            </span>
                         </li>
                         <li class="detail">
-                            <img src="images/internet-icon.png" width="25" height="25">
+                            <img src="{% static 'mobile/images/internet-icon.png' %}" width="25" height="25">
                             <span class="detail__value">
                                http://uzembassy.ru
                            </span>
                         </li>
                         <li class="detail">
-                            <img src="images/phone-icon.png" width="25" height="25">
+                            <img src="{% static 'mobile/images/phone-icon.png' %}" width="25" height="25">
                             <span class="detail__value">
                                +7-499 230-00-76
                            </span>
                         </li>
                         <li class="detail">
-                            <img src="images/telegram-icon.png" width="25" height="25">
+                            <img src="{% static 'mobile/images/telegram-icon.png' %}" width="25" height="25">
                             <span class="detail__value">
                                @UzKoRusBot
                            </span>
@@ -123,9 +124,9 @@
 
                     <div class="card__button">
                         <a class="main-button" href="https://www.google.com/maps/place/%D0%9F%D0%BE%D1%81%D0%BE%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE+%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B8+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@55.7326936,37.6207698,19.75z/data=!4m5!3m4!1s0x46b54b04eabcc165:0xd9aabb3c9ad697c3!8m2!3d55.7326659!4d37.6210017?shorturl=1">
-                            <img src="images/map-icon.png" width="26" height="26">
+                            <img src="{% static 'mobile/images/map-icon.png' %}" width="26" height="26">
                             <span>Xaritadan ko'rish</span>
-                            <img src="images/arrov-right-icon.png" width="21" height="13">
+                            <img src="{% static 'mobile/images/arrov-right-icon.png' %}" width="21" height="13">
                         </a>
                     </div>
 
@@ -134,34 +135,34 @@
             <li class="card">
                 <div class="card__header">
                     <h3 class="card__title">
-                        O‘zbekistonning Rossiya Federatsiyasidagi Elchixonasi
+                        O'zbekistonning Rossiya Federatsiyasidagi Elchixonasi
                     </h3>
                 </div>
                 <div class="card__image">
-                    <img src="images/embassy-card-image.png" width="268" height="215">
+                    <img src="{% static 'mobile/images/embassy-card-image.png' %}" width="268" height="215">
                 </div>
                 <div class="card__info">
                     <ul class="details">
                         <li class="detail">
-                            <img src="images/location-icon.png" width="25" height="25">
+                            <img src="{% static 'mobile/images/location-icon.png' %}" width="25" height="25">
                             <span class="detail__value">
-                               119017, 12 Pogorelskiy tor ko‘chasi, Moskva, Rossiya.
+                               119017, 12 Pogorelskiy tor ko'chasi, Moskva, Rossiya.
                            </span>
                         </li>
                         <li class="detail">
-                            <img src="images/internet-icon.png" width="25" height="25">
+                            <img src="{% static 'mobile/images/internet-icon.png' %}" width="25" height="25">
                             <span class="detail__value">
                                http://uzembassy.ru
                            </span>
                         </li>
                         <li class="detail">
-                            <img src="images/phone-icon.png" width="25" height="25">
+                            <img src="{% static 'mobile/images/phone-icon.png' %}" width="25" height="25">
                             <span class="detail__value">
                                +7-499 230-00-76
                            </span>
                         </li>
                         <li class="detail">
-                            <img src="images/telegram-icon.png" width="25" height="25">
+                            <img src="{% static 'mobile/images/telegram-icon.png' %}" width="25" height="25">
                             <span class="detail__value">
                                @UzKoRusBot
                            </span>
@@ -172,7 +173,7 @@
                         <a class="main-button" href="https://www.google.com/maps/place/%D0%9F%D0%BE%D1%81%D0%BE%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE+%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B8+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@55.7326936,37.6207698,19.75z/data=!4m5!3m4!1s0x46b54b04eabcc165:0xd9aabb3c9ad697c3!8m2!3d55.7326659!4d37.6210017?shorturl=1">
                             <img src="images/map-icon.png" width="26" height="26">
                             <span>Xaritadan ko'rish</span>
-                            <img src="images/arrov-right-icon.png" width="21" height="13">
+                            <img src="{% static 'mobile/images/arrov-right-icon.png' %}" width="21" height="13">
                         </a>
                     </div>
 
