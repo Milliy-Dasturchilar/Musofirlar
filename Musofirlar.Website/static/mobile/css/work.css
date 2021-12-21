@@ -1,0 +1,111 @@
+.cards {
+    height: 240px;
+}
+
+.cards2 {
+    height: 320px;
+    grid-template-columns: repeat(7, 300px);
+}
+.card__border {
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.card__top,
+.card__bottom {
+    border-left: 13px solid #FF7C7C;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 15px;
+    display: block;
+}
+
+.card__bottom {
+    border-color: #6BFF7A;
+    margin-top: 30px;
+}
+
+.card__title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
+}
+
+.card__title2 {
+    color: #0082DD;
+}
+
+.card__header {
+    background-color: #0078D4;
+    display: flex;
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__img-position {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+}
+
+.card__posted-time {
+    font-size: 12px;
+    color: #828282;
+    margin-top: 8px;
+}
+
+.card__prices {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.card__work-time {
+    text-align: end;
+}
+
+.search-group {
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+}
+
+.card__body {
+    padding: 12px 26px;
+}
+
+.card__button {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.hashtegs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.hashtegs li {
+    margin: 5px 5px 5px 0;
+}
+
+.search-group > input {
+    width: 85%;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #beb2b2;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.search-group > button {
+    width: 25%;
+    border: 2px solid #76CDD8;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #76CDD8;
+}

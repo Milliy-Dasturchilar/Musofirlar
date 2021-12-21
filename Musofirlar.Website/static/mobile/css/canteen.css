@@ -1,0 +1,97 @@
+.search-group {
+    display: flex;
+}
+
+.search-group > input {
+    width: 85%;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #beb2b2;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.search-group > button {
+    width: 15%;
+    border: 2px solid #76CDD8;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #76CDD8;
+}
+
+.cards {
+    height: 400px;
+    grid-template-columns: repeat(3, 279px);
+    margin-top: -20px;
+}
+
+.cards2 {
+    grid-template-columns: repeat(10, 279px);
+}
+
+.main-title {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #110A3F;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 2px;
+}
+
+.card__border {
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.card__title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.margin-left-10 {
+    font-size: 10px;
+    margin-left: 8px;
+}
+
+.card__header {
+    background-color: #76CDD8;
+    display: flex;
+    position: relative;
+    padding: 20px;
+    color: #000;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__body {
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__canteen__rate img {
+    width: 15px;
+    height: 15px;
+}
+
+.card__button {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.card__image > img {
+    object-fit: cover;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    margin: 20px auto;
+    width: auto;
+}

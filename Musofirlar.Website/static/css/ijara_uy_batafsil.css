@@ -1,0 +1,237 @@
+.header-container{
+
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.card-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.card-images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+}
+.card-images > button {
+  margin: 20px;
+  padding: 5px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #8d8c8c;
+  background: #fff;
+  border: 5px solid #8d8c8c;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.anons {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  padding-top: 0;
+  padding-bottom: 8px;
+}
+.anons > h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  background-color: blue;
+  color: #fff;
+  padding: 20px 25px 14px 25px;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.anons-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.anons-items {
+  margin-bottom: 14px;
+}
+.anons-items > p {
+  margin: 0;
+}
+.anons-items > img {
+  margin-right: 11px;
+}
+.anons-items > hr {
+  margin: 0;
+  color: #cdcdcd;
+  margin-top: 3px;
+}
+.anons-items:first-child {
+  margin-top: 18px;
+}
+
+/* request */
+.request {
+  max-width: 550px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.location-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+.request-logo {
+  background-color: #9aeef9;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.user-logo {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+.user-logo > div > h1 {
+  font-family: "Roboto";
+  font-style: bold;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.user-logo > div > p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #949494;
+}
+.user-logo > div {
+}
+.tel {
+  display: flex;
+}
+.tel > img {
+  margin-right: 5px;
+}
+.tel > p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.logo-image {
+  margin-right: 15px;
+  margin: 5px;
+}
+.request > h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #555555;
+  margin-top: 30px;
+}
+.forms > form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+input {
+  width: 230px;
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  padding: 8px 15px;
+}
+textarea {
+  width: 100%;
+  height: 70px;
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  padding: 8px 15px;
+}
+.last-btn {
+  text-align: center;
+  margin-top: 15px;
+}
+.request-btn {
+  padding: 8px 25px;
+  background: #9aeef9;
+  border: 1px solid #76cdd8;
+  border-radius: 7px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #0f0f0f;
+}
+.request-btn:hover {
+  opacity: 0.7;
+}
+.request-btn:active {
+  opacity: 0.5;
+}
+
+.location-card {
+  display: flex;
+  flex-direction: column;
+}
+.location-card > div {
+  display: flex;
+  align-items: center;
+  background-color: #9aeef9;
+  padding: 20px 25px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 10px 0 0;
+}
+.location-card > div > h1 {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.location-img{
+    margin-right: 15px;
+}

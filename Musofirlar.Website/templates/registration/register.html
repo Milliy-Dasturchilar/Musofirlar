@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Special+Elite&family=Spicy+Rice&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/registr.css">
+
+    <title>Ro'yhatdan o'tish</title>
+</head>
+<body>
+<!-- header -->
+
+<header>
+    <section class="site-header">
+        <div>
+            <div class="container header-container">
+                <div class="site-header-primary">
+                    <a href="./index.html"><img class="logo-img" src="./img/first/MUSOFIRLAR.UZ.svg" alt=""></a>
+                </div>
+                <div class="site-nav">
+                    <ul class="site-nav-list">
+                        <li class="site-nav-item"><a href="./index.html">Bosh sahifa</a></li>
+                        <li class="site-nav-item"><a href="./ijara-uy.html">Ijara uylar</a></li>
+                        <li class="site-nav-item"><a href="./ish_topish.html">Ish topish</a></li>
+                        <li class="site-nav-item"><a href="./o'zbek_oshxonasi.html">O'zbek oshxonasi</a></li>
+                        <li class="site-nav-item"><a href="./elchixonalar.html">Elchixonalar</a></li>
+                    </ul>
+                    <ul class="registration">
+                        <li><a class="registration-open" href="./kirish.html">Kirish</a></li> <span>|</span>
+                        <li><a href="#" class="active">Ro'yxatdan o'tish</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+<!-- main -->
+
+<main class="site-main">
+
+<section class="registr">
+    <div class="container registr-container">
+        <div>
+            <h1 class="registr-title">
+                Ro'yxatdan o'tish
+            </h1>
+            <form action="#" id="registr-form">
+                <input class="form_input" type="text" name="first_name" id="first_name"
+                    placeholder="Ismingizni kiriting...">
+                <input class="form_input" type="text" name="last_name" id="last_name"
+                    placeholder="Familyangizni kiriting...">
+                <input class="form_input" type="text" name="phone_number" id="phone_number"
+                    placeholder="Telefon raqamingizni kiriting...">
+
+                <div class="form_div">
+                    <select name="country_select" id="country_select">
+                        <option value="none" selected>Davlatni tanlang</option>
+                        <option value="0">O'zbekiston</option>
+                        <option value="1">Russiya</option>
+                        <option value="2">Qozog'iston</option>
+                        <option value="3">Qirg'iziston</option>
+                    </select>
+                    <input type="text" name="country_input" id="country_input" placeholder="Davlat nomini kiriting...">
+                </div>
+                <input class="form_input" type="text" name="city" id="city"
+                    placeholder="Shahar/tuman nomini kiriting...">
+                <input class="form_input" type="password" name="password1" placeholder="Parol o'ylab toping">
+                <input class="form_input" type="password" name="password2" placeholder="Parolni tasdiqlang">
+            </form>
+            <div class="form-footer">
+                <button class="main-btn" type="submit" id="submit" name="submit">
+                    Ro'yxatdan o'tish
+                </button>
+                <a class="form-kirish" href="#">Kirish</a>
+                <a href="#">Yordam</a>
+            </div>
+        </div>
+        <div>
+            <img class="kirish-img" src="./img/third/kirish-img.png" alt="Bayroq rasmi" width="550" height="580">
+        </div>
+    </div>
+</section>
+
+</main>
+
+    <!-- footer -->
+    
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <img class="footer-title" src="./img/first/MUSOFIRLAR.UZ.svg">
+            <ul class="footer-list">
+                <li class="footer-item"><a href="#">Bosh sahifa</a></li>
+                <li class="footer-item"><a href="#">Ijara uylar</a></li>
+                <li class="footer-item"><a href="#">O'zbek oshxonasi</a></li>
+                <li class="footer-item"><a href="#">Ish topish</a></li>
+                <li class="footer-item"><a href="#">Elchixonalar</a></li>
+            </ul>
+            <hr>
+    
+    
+            <ul class="footer-link">
+                <li class="footer-links"><a href="https://t.me/Murodov_Bakhtiyor"><i class="fab fa-telegram"></i></a></li>
+                <li class="footer-links"><a href="https://facebook.com/bakhtiyor.murodov1249"><i
+                            class="fab fa-facebook"></i></a></li>
+                <li class="footer-links"><a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+                </li>
+    
+                <li class="footer-links"><a href="https://instagram.com/_baxtiyor.murodov_"><i
+                            class="fab fa-instagram"></i></a>
+                </li>
+                <li class="footer-links"><a href="https://twiter.com/BaxtiyorMurodo2"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="footer-links"><a href="https://www.linkedin.com/in/baxtiyor-murodov"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+            <div><img src="./img/first/footer-icon.png" alt="">
+                <span class="footer-text">
+                    Copyright 2021 All rigths reserved. Powered by <a
+                        href="https://saminjonovsanjarbek.github.io/Mdevs-team/">MDevs</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
