@@ -1,0 +1,206 @@
+@media (max-width: 767px) {
+    html,
+    body {
+        min-width: 320px;
+    }
+
+    .header{
+        padding-bottom: 200px;
+    }
+
+    .header-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    site-header-primary {
+        justify-self: flex-start;
+    }
+
+    .logo-img {
+        width: 154px;
+        margin: 20px 0 16px;
+    }
+
+    .site-header {
+        width: 94%;
+        margin: 8px auto 0;
+    }
+
+    .header-bottom-list {
+        flex-direction: column;
+        margin-top: 100px;
+        padding-top: 0;
+        border-radius: 14px;
+    }
+
+    .header-bottom-item .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    .site-nav {
+        flex-direction: column;
+        display: none;
+    }
+
+    .site-nav-list {
+        flex-direction: column;
+    }
+
+    .header-bottom-item {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .global-timer {
+        display: none;
+    }
+
+    .advertisement-container {
+        flex-direction: column;
+    }
+
+    .advertisement-img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .advertisement-right {
+        margin: 0;
+    }
+
+    .header-bottom-item {
+        width: 344px;
+        margin: auto;
+    }
+
+    .text1 {
+        font-size: 36px;
+    }
+
+    .text3 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .header-bottom-item > p {
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        width: auto;
+        font-weight: 400;
+
+    }
+
+    .card-top hr {
+        width: 100%;
+        margin: auto;
+    }
+
+    .card-top h1 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    .cards-list li {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .cards-list li img {
+        width: 140px;
+        height: auto;
+    }
+
+    .card-title {
+        font-size: 30px;
+    }
+
+    .card-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .card-btn {
+        position: static;
+        display: block;
+        margin: auto;
+        transform: translateX(0);
+    }
+
+    .advertisement-container {
+        padding-top: 100px;
+    }
+
+    .advertisement-container * {
+        width: 100%;
+        margin: auto;
+    }
+
+    .advertisement-btn {
+        top: -30px;
+        padding: 15px 10px;
+        /*border-radius: px;*/
+        width: 230px;
+        font-size: 18px;
+    }
+
+    .advertisement-right {
+        width: auto;
+        padding: 20px 10px;
+        margin: 30px 0 10px;
+    }
+
+    .advertisement-right h1 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .advertisement-right a {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .footer-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footer-list {
+        flex-direction: column;
+        padding-top: 0;
+        border-radius: 14px;
+    }
+
+    .footer-item {
+        margin-bottom: 20px;
+    }
+
+    .footer-item a {
+        font-size: 18px;
+    }
+
+    .site-footer hr {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-link {
+        margin-top: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+        width: 80%;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-links a i {
+        font-size: 30px;
+    }
+}
