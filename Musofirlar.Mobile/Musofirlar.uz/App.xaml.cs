@@ -13,7 +13,14 @@ namespace Musofirlar.uz
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            if (Device.RuntimePlatform == Device.UWP)
+            {
+                MainPage = new AppShell();
+            }
+            else
+            {
+                MainPage = new SplashPage();
+            }
         }
 
         protected override void OnStart()
