@@ -1,6 +1,9 @@
 from django.shortcuts import render
+from .models import Work
 
 # Create your views here.
 
+
 def work_home(request):
-    return render(request, 'work/work_home.html')
+    works = Work.objects.all()
+    return render(request, 'work/work.html', {'works': works})
