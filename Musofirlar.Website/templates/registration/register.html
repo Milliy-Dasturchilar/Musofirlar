@@ -48,7 +48,7 @@
                         <span>|</span>
                         <li class="registration-item"><a href="{% url 'logout_user' %}">Chiqish</a></li>
                         {% else %}
-                        <li><a class="registration-open active" href="{% url 'login_user' %}">Kirish</a></li>
+                        <li><a class="registration-open" href="{% url 'login_user' %}">Kirish</a></li>
                         <span>|</span>
                         <li><a class="active" href="{% url 'register_user' %}">Ro'yxatdan o'tish</a></li>
                         {% endif %}

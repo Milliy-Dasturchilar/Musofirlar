@@ -17,9 +17,9 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Special+Elite&family=Spicy+Rice&display=swap"
         rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/ozbek_oshxonasi.css">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ozbek_oshxonasi.css' %}">
 
     <title>O'zbek oshxonasi</title>
 </head>
@@ -30,19 +30,27 @@
             <div>
                 <div class="container header-container">
                     <div class="site-header-primary">
-                        <a href="./index.html"><img class="logo-img" src="./img/first/MUSOFIRLAR.UZ.svg" alt=""></a>
+                        <a href="./index.html"><img class="logo-img" src="{% url'img/first/MUSOFIRLAR.UZ.svg' %}" alt=""></a>
                     </div>
                     <div class="site-nav">
                         <ul class="site-nav-list">
-                            <li class="site-nav-item"><a href="./index.html">Bosh sahifa</a></li>
-                            <li class="site-nav-item"><a href="./ijara-uy.html">Ijara uylar</a></li>
-                            <li class="site-nav-item"><a href="./ish_topish.html">Ish topish</a></li>
-                            <li class="site-nav-item"><a href="#">O'zbek oshxonasi</a></li>
-                            <li class="site-nav-item"><a href="./elchixonalar.html">Elchixonalar</a></li>
+                            <li class="site-nav-item"><a class="active" href="{% url 'home' %}">Bosh sahifa</a></li>
+                            <li class="site-nav-item"><a href="{% url 'flat_home' %}">Ijara uylar</a></li>
+                            <li class="site-nav-item"><a href="{% url 'work_home' %}">Ish topish</a></li>
+                            <li class="site-nav-item"><a class="active" href="{% url 'canteen_home' %}">O'zbek oshxonasi</a></li>
+                            <li class="site-nav-item"><a href="{% url 'embassy_home' %}">Elchixonalar</a></li>
                         </ul>
                         <ul class="registration">
-                            <li><a class="registration-open active" href="./kirish.html">Kirish</a></li> <span>|</span>
-                            <li><a href="./registr.html">Ro'yxatdan o'tish</a></li>
+                            {% if user.is_authenticated %}
+                            <li class="registration-item"><a>{{ user.first_name }}</a>
+                            </li>
+                            <span>|</span>
+                            <li class="registration-item"><a href="{% url 'logout_user' %}">Chiqish</a></li>
+                            {% else %}
+                            <li><a class="registration-open" href="{% url 'login_user' %}">Kirish</a></li>
+                            <span>|</span>
+                            <li><a  href="{% url 'register_user' %}">Ro'yxatdan o'tish</a></li>
+                            {% endif %}
                         </ul>
                     </div>
                 </div>
@@ -61,7 +69,7 @@
             <div class="container registr-container">
                 <form action="" class="registr-form">
                     <div class="registr_item">
-                        <span><img src="./img/first/card-location.svg" alt="" width="40" height="40" /></span>
+                        <span><img src="{% static 'img/first/card-location.svg' %}" alt="" width="40" height="40" /></span>
                         <select name="country" id="country">
                             <option value="0">O'zbekiston</option>
                             <option value="1">Rossiya</option>
@@ -76,7 +84,7 @@
                     <div class="registr_search">
                         <input type="text" placeholder="Qidirish uchun yozing..." />
                         <button type="submit" class="btn-search">
-                            <img src="./img/first/search-btn.svg" alt=" qidiruv icon" width="40" height="40" />
+                            <img src="{% static 'img/first/search-btn.svg' %}" alt=" qidiruv icon" width="40" height="40" />
                         </button>
                     </div>
                 </form>
@@ -92,10 +100,10 @@
                 <ul class="cook-list">
                     <li class="cook-item">
                         <h1>Rayhon Milliy Taomlar</h1>
-                        <img src="./img/second/taom-img.png" alt="" width="500" height="300">
+                        <img src="{% static 'img/second/taom-img.png' %}" alt="" width="500" height="300">
                         <div>
                             <div>
-                                <img src="./img/first/card-location.svg" alt="">
+                                <img src="{% static 'img/first/card-location.svg' %}" alt="">
                                 <span>
                                     O'zbekiston, Farg'ona
                                 </span>
@@ -114,33 +122,10 @@
         
                     <li class="cook-item">
                         <h1>Rayhon Milliy Taomlar</h1>
-                        <img src="./img/second/taom-img.png" alt="" width="500" height="300">
+                        <img src="{% static 'img/second/taom-img.png' %}" alt="" width="500" height="300">
                         <div>
                             <div>
-                                <img src="./img/first/card-location.svg" alt="">
-                                <span>
-                                    O'zbekiston, Farg'ona
-                                </span>
-                            </div>
-                            <div>
-                                <span>Reyting:</span>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                        </div>
-                        <a class="main-cards-btn" href="">Batafsil</a>
-        
-                    </li>
-        
-                    <li class="cook-item">
-                        <h1>Rayhon Milliy Taomlar</h1>
-                        <img src="./img/second/taom-img.png" alt="" width="500" height="300">
-                        <div>
-                            <div>
-                                <img src="./img/first/card-location.svg" alt="">
+                                <img src="{% static 'img/first/card-location.svg' %}" alt="">
                                 <span>
                                     O'zbekiston, Farg'ona
                                 </span>
@@ -160,10 +145,33 @@
         
                     <li class="cook-item">
                         <h1>Rayhon Milliy Taomlar</h1>
-                        <img src="./img/second/taom-img.png" alt="" width="500" height="300">
+                        <img src="{% static 'img/second/taom-img.png' %}" alt="" width="500" height="300">
                         <div>
                             <div>
-                                <img src="./img/first/card-location.svg" alt="">
+                                <img src="{% static 'img/first/card-location.svg' %}" alt="">
+                                <span>
+                                    O'zbekiston, Farg'ona
+                                </span>
+                            </div>
+                            <div>
+                                <span>Reyting:</span>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <a class="main-cards-btn" href="">Batafsil</a>
+        
+                    </li>
+        
+                    <li class="cook-item">
+                        <h1>Rayhon Milliy Taomlar</h1>
+                        <img src="{% static 'img/second/taom-img.png' %}" alt="" width="500" height="300">
+                        <div>
+                            <div>
+                                <img src="{% static 'img/first/card-location.svg' %}" alt="">
                                 <span>
                                     O'zbekiston, Farg'ona
                                 </span>
@@ -182,9 +190,9 @@
                     </li>
                 </ul>
                 <div class="arrows">
-                    <a href="#"><img src="./img/first/arrow-left.png" alt="" /></a>
+                    <a href="#"><img src="{% static 'img/first/arrow-left.png' %}" alt="" /></a>
                     <span>1 2 3 . . . 15</span>
-                    <a href="#"><img src="./img/first/arrow-right_.png" alt="" /></a>
+                    <a href="#"><img src="{% static 'img/first/arrow-right_.png' &}" alt="" /></a>
                 </div>
             </div>
         
@@ -193,41 +201,41 @@
     </main>
 
 <!-- footer -->
-    <footer class="site-footer">
-        <div class="container footer-container">
-            <img class="footer-title" src="./img/first/MUSOFIRLAR.UZ.svg">
-            <ul class="footer-list">
-                <li class="footer-item"><a href="#">Bosh sahifa</a></li>
-                <li class="footer-item"><a href="#">Ijara uylar</a></li>
-                <li class="footer-item"><a href="#">O'zbek oshxonasi</a></li>
-                <li class="footer-item"><a href="#">Ish topish</a></li>
-                <li class="footer-item"><a href="#">Elchixonalar</a></li>
-            </ul>
-            <hr>
-    
-    
-            <ul class="footer-link">
-                <li class="footer-links"><a href="https://t.me/Murodov_Bakhtiyor"><i class="fab fa-telegram"></i></a></li>
-                <li class="footer-links"><a href="https://facebook.com/bakhtiyor.murodov1249"><i
-                            class="fab fa-facebook"></i></a></li>
-                <li class="footer-links"><a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
-                </li>
-    
-                <li class="footer-links"><a href="https://instagram.com/_baxtiyor.murodov_"><i
-                            class="fab fa-instagram"></i></a>
-                </li>
-                <li class="footer-links"><a href="https://twiter.com/BaxtiyorMurodo2"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="footer-links"><a href="https://www.linkedin.com/in/baxtiyor-murodov"><i
-                            class="fab fa-linkedin-in"></i></a></li>
-            </ul>
-            <div><img src="./img/first/footer-icon.png" alt="">
-                <span class="footer-text">
-                    Copyright 2021 All rigths reserved. Powered by <a
-                        href="https://saminjonovsanjarbek.github.io/Mdevs-team/">MDevs</a>
-                </span>
-            </div>
+<footer class="site-footer">
+    <div class="container footer-container">
+        <img class="footer-title" src="{% static 'img/first/MUSOFIRLAR.UZ.svg' %}">
+        <ul class="footer-list">
+            <li class="footer-item"><a href="{% url 'home' %}">Bosh sahifa</a></li>
+            <li class="footer-item"><a href="{% url 'flat_home' %}">Ijara uylar</a></li>
+            <li class="footer-item"><a href="{% url 'work_home' %}">Ish topish</a></li>
+            <li class="footer-item"><a href="{% url 'canteen_home' %}">O'zbek oshxonasi</a></li>
+            <li class="footer-item"><a href="{% url 'embassy_home' %}">Elchixonalar</a></li>
+        </ul>
+        <hr>
+
+
+        <ul class="footer-link">
+            <li class="footer-links"><a href="https://t.me/Murodov_Bakhtiyor"><i class="fab fa-telegram"></i></a></li>
+            <li class="footer-links"><a href="https://facebook.com/bakhtiyor.murodov1249"><i
+                        class="fab fa-facebook"></i></a></li>
+            <li class="footer-links"><a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+            </li>
+
+            <li class="footer-links"><a href="https://instagram.com/_baxtiyor.murodov_"><i
+                        class="fab fa-instagram"></i></a>
+            </li>
+            <li class="footer-links"><a href="https://twiter.com/BaxtiyorMurodo2"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="footer-links"><a href="https://www.linkedin.com/in/baxtiyor-murodov"><i
+                        class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <div><img src="{% static 'img/first/footer-icon.png' %}" alt="">
+            <span class="footer-text">
+                Copyright 2021 All rigths reserved. Powered by <a
+                    href="https://saminjonovsanjarbek.github.io/Mdevs-team/">MDevs</a>
+            </span>
         </div>
+    </div>
 </footer>
 </body>
 </html>
