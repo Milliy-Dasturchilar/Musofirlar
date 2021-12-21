@@ -6,4 +6,4 @@ from .models import Canteen
 
 def canteen_home(request):
     canteens = Canteen.objects.all()
-    return render(request, 'canteen/home.html', {'canteens': canteens})
+    return render(request, 'canteen/canteen.html', {'canteens': canteens})

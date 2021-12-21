@@ -32,8 +32,10 @@
         <div>
             <div class="container header-container">
                 <div class="site-header-primary">
-                    <a href="{% url 'home' %}"><img class="logo-img" src="{% url'img/first/MUSOFIRLAR.UZ.svg' %}"
-                                                    alt=""></a>
+                    <a href="{% url 'home' %}">
+                        <img class="logo-img" src="{% static 'img/first/MUSOFIRLAR.UZ.svg' %}"
+                             alt="">
+                    </a>
                 </div>
                 <div class="site-nav">
                     <ul class="site-nav-list">
@@ -102,36 +104,21 @@
             </h1>
             <hr>
             <ul class="cook-list">
-                <li class="cook-item">
-                    <h1>Rayhon Milliy Taomlar</h1>
-                    <img src="{% static 'img/second/taom-img.png' %}" alt="" width="500" height="300">
-                    <div>
-                        <div>
-                            <img src="{% static 'img/first/card-location.svg' %}" alt="">
-                            <span>
-                                    O'zbekiston, Farg'ona
-                                </span>
-                        </div>
-                        <div>
-                            <span>Reyting:</span>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                    </div>
-                    <a class="main-cards-btn" href="">Batafsil</a>
-                </li>
 
-                <li class="cook-item">
-                    <h1>Rayhon Milliy Taomlar</h1>
-                    <img src="{% static 'img/second/taom-img.png' %}" alt="" width="500" height="300">
+                {% for canteen in canteens %}
+
+                     <li class="cook-item">
+                    <h1>{{ canteen.canteen_name }}</h1>
+                    {% if canteen.image %}
+                        <img style="object-fit: cover" src="{{ canteen.image.url }}" alt="{{ canteen.canteen_name }}" width="500" height="300"/>
+                    {% else %}
+                        <img src="{% static 'img/second/taom-img.png' %}" alt="" width="500" height="300">
+                    {% endif %}
                     <div>
                         <div>
                             <img src="{% static 'img/first/card-location.svg' %}" alt="">
                             <span>
-                                    O'zbekiston, Farg'ona
+                                   {{ canteen.country }}, {{ canteen.city }}
                                 </span>
                         </div>
                         <div>
@@ -146,6 +133,8 @@
                     <a class="main-cards-btn" href="">Batafsil</a>
 
                 </li>
+
+                {% endfor %}
 
                 <li class="cook-item">
                     <h1>Rayhon Milliy Taomlar</h1>
