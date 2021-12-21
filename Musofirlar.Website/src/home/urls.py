@@ -7,7 +7,7 @@ urlpatterns = [
     path('mobile/home', views.mobile_home, name='mobile_home'),
 
     path('', include('src.flat.urls')),
-    # path('', include('src.work.urls')),
-    # path('', include('src.canteen.urls')),
-    # path('', include('src.embassy.urls')),
+    path('', include('src.work.urls')),
+    path('', include('src.canteen.urls')),
+    path('', include('src.embassy.urls')),
 ]
