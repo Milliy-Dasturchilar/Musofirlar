@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,9 +18,9 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Special+Elite&family=Spicy+Rice&display=swap"
         rel="stylesheet">
     <title>Kirish</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/kirish.css">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/kirish.css' %}">
 </head>
 <body>
     
@@ -27,7 +29,7 @@
             <div>
                 <div class="container header-container">
                     <div class="site-header-primary">
-                        <a href="./index.html"><img class="logo-img" src="./img/first/MUSOFIRLAR.UZ.svg" alt=""></a>
+                        <a href="./index.html"><img class="logo-img" src="{% static 'img/first/MUSOFIRLAR.UZ.svg' %}" alt=""></a>
                     </div>
                     <div class="site-nav">
                         <ul class="site-nav-list">
@@ -69,7 +71,7 @@
             Kirish
         </button>
     </div>
-    <img class="kirish-img" src="./img/third/kirish-img.png" alt="" width="550" height="580">
+    <img class="kirish-img" src="{% static 'img/third/kirish-img.png' %}" alt="" width="550" height="580">
 </div>
 
 </main>
@@ -78,7 +80,7 @@
 
 <footer class="site-footer">
     <div class="container footer-container">
-        <img class="footer-title" src="./img/first/MUSOFIRLAR.UZ.svg">
+        <img class="footer-title" src="{% static 'img/first/MUSOFIRLAR.UZ.svg' %}">
         <ul class="footer-list">
             <li class="footer-item"><a href="#">Bosh sahifa</a></li>
             <li class="footer-item"><a href="#">Ijara uylar</a></li>
@@ -104,7 +106,7 @@
             <li class="footer-links"><a href="https://www.linkedin.com/in/baxtiyor-murodov"><i
                         class="fab fa-linkedin-in"></i></a></li>
         </ul>
-        <div><img src="./img/first/footer-icon.png" alt="">
+        <div><img src="{% static 'img/first/footer-icon.png' %}" alt="">
             <span class="footer-text">
                 Copyright 2021 All rigths reserved. Powered by <a
                     href="https://saminjonovsanjarbek.github.io/Mdevs-team/">MDevs</a>
