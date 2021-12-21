@@ -38,10 +38,11 @@ class Flat(models.Model):
         return f'{self.author.first_name}\'s flat in {self.country} {self.city} {self.address}'
 
     def save(self, *args, **kwargs):
-        self.image.name = self.image.name.replace(' ', '')
-        self.image.name = self.image.name.replace(',', '-')
-        self.image.name = self.image.name.replace('_', '-')
-        self.image.name = str(uuid4()) + '-' + self.image.name
+        if self.image:
+            self.image.name = self.image.name.replace(' ', '')
+            self.image.name = self.image.name.replace(',', '-')
+            self.image.name = self.image.name.replace('_', '-')
+            self.image.name = str(uuid4()) + '-' + self.image.name
         super(Flat, self).save(*args, **kwargs)
 
     def delete(self, *args, **kwargs):

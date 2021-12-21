@@ -38,10 +38,11 @@ class Work(models.Model):
         return self.work_title
 
     def save(self, *args, **kwargs):
-        self.image.name = self.image.name.replace(' ', '')
-        self.image.name = self.image.name.replace(',', '-')
-        self.image.name = self.image.name.replace('_', '-')
-        self.image.name = str(uuid4()) + '-' + self.image.name
+        if self.image:
+            self.image.name = self.image.name.replace(' ', '')
+            self.image.name = self.image.name.replace(',', '-')
+            self.image.name = self.image.name.replace('_', '-')
+            self.image.name = str(uuid4()) + '-' + self.image.name
         super(Work, self).save(*args, **kwargs)
 
     def delete(self, *args, **kwargs):

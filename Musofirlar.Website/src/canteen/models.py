@@ -32,10 +32,11 @@ class Canteen(models.Model):
         return self.canteen_name
 
     def save(self, *args, **kwargs):
-        self.image.name = self.image.name.replace(' ', '')
-        self.image.name = self.image.name.replace(',', '-')
-        self.image.name = self.image.name.replace('_', '-')
-        self.image.name = str(uuid4()) + '-' + self.image.name
+        if self.image:
+            self.image.name = self.image.name.replace(' ', '')
+            self.image.name = self.image.name.replace(',', '-')
+            self.image.name = self.image.name.replace('_', '-')
+            self.image.name = str(uuid4()) + '-' + self.image.name
         super(Canteen, self).save(*args, **kwargs)
 
     def delete(self, *args, **kwargs):

@@ -1,183 +1,197 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- font awesome -->
+    <!-- font awesome -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+          integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Special+Elite&family=Spicy+Rice&display=swap"
-        rel="stylesheet">
-    
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Special+Elite&family=Spicy+Rice&display=swap"
+            rel="stylesheet">
+
     <title>Ijara uy</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/ijara_uy_batafsil.css">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flat-detail.css' %}">
     <title>Ijara uy Batafsil</title>
 </head>
 <body>
-    <header>
-        <section class="site-header">
-            <div>
-                <div class="container header-container">
-                    <div class="site-header-primary">
-                        <a href="./index.html"><img class="logo-img" src="./img/first/MUSOFIRLAR.UZ.svg" alt=""></a>
-                    </div>
-                    <div class="site-nav">
-                        <ul class="site-nav-list">
-                            <li class="site-nav-item"><a href="./index.html">Bosh sahifa</a></li>
-                            <li class="site-nav-item"><a class="active" href="./ijara-uy.html">Ijara uylar</a></li>
-                            <li class="site-nav-item"><a href="./ish_topish.html">Ish topish</a></li>
-                            <li class="site-nav-item"><a href="./o'zbek_oshxonasi.html">O'zbek oshxonasi</a></li>
-                            <li class="site-nav-item"><a href="./elchixonalar.html">Elchixonalar</a></li>
-                        </ul>
-                        <ul class="registration">
-                            <li><a class="registration-open" href="./kirish.html">Kirish</a></li> <span>|</span>
-                            <li><a href="./registr.html">Ro'yxatdan o'tish</a></li>
-                        </ul>
-                    </div>
+<header>
+    <section class="site-header">
+        <div>
+            <div class="container header-container">
+                <div class="site-header-primary">
+                    <a href="{% url 'home' %}"><img class="logo-img" src="{% static 'img/first/MUSOFIRLAR.UZ.svg' %}"
+                                                    alt=""></a>
                 </div>
-            </div>
-        </section>
-    </header>
-
-    <!-- main -->
-
-    <main class="site-main">
-    
-        <section>
-            <div class="container card-container">
-                <div class="card-images">
-                    <button>
-                        < </button>
-                            <img src="./img/second/ijara-card-img.png" alt="" width="570" height="400">
-                            <button>
-                                >
-                            </button>
-                </div>
-                <div class="anons">
-                    <h1>
-                        E'LON HAQIDA BATAFSIL
-                    </h1>
-                    <ul class="anons-list">
-                        <li class="anons-items"><img src="./img/first/card-location.svg" alt="">O'zbekiston, Farg'ona
-                            <hr>
-                        </li>
-                        <li class="anons-items"> <img src="./img/first/dollar-icon.png" alt="">200
-                            <hr>
-                        </li>
-                        <li class="anons-items"> <img src="./img/first/home-icon.png" alt="">3 xonali
-                            <hr>
-                        <li>
-                        <li class="anons-items"> <img src="./img/first/zina-icon.png" alt="">2-qavat
-                            <hr>
-                        </li>
-                        <li class="anons-items"> <img src="./img/second/qo'shish.svg" alt=""> Qo'shimcha:
-                            <hr>
-                        </li>
-                        <li class="anons-items">
-                            <p>
-                                Monolithic web platforms crack when teams create international versions of a website or
-                                e-commerce store. Copying and
-                                pasting changes from one site to another slows development, and codebases quickly get out of
-                                sync.
-                            </p>
-                            <hr>
-                        </li>
+                <div class="site-nav">
+                    <ul class="site-nav-list">
+                        <li class="site-nav-item"><a href="{% url 'home' %}">Bosh sahifa</a></li>
+                        <li class="site-nav-item"><a class="active" href="{% url 'flat_home' %}">Ijara uylar</a></li>
+                        <li class="site-nav-item"><a href="{% url 'work_home' %}">Ish topish</a></li>
+                        <li class="site-nav-item"><a href="{% url 'canteen_home' %}">O'zbek oshxonasi</a></li>
+                        <li class="site-nav-item"><a href="{% url 'embassy_home' %}">Elchixonalar</a></li>
+                    </ul>
+                    <ul class="registration">
+                        {% if user.is_authenticated %}
+                            <li class="registration-item"><a>{{ user.first_name }}</a>
+                            </li>
+                            <span>|</span>
+                            <li class="registration-item"><a href="{% url 'logout_user' %}">Chiqish</a></li>
+                        {% else %}
+                            <li><a class="registration-open" href="{% url 'login_user' %}">Kirish</a></li>
+                            <span>|</span>
+                            <li><a href="{% url 'register_user' %}">Ro'yxatdan o'tish</a></li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>
-    
-        </section>
-    
-        <section class="location">
-            <div class="container location-container">
-                <div class="request">
-                    <div class="request-logo">
-                        <div class="user-logo">
-                            <img class="logo-image" src="./img/second/user-logo.svg" alt="" width="50" height="50">
-                            <div>
-                                <h1>Nodirbek Abdulaxadov</h1>
-                                <p>kecha 10:10</p>
-                            </div>
-                        </div>
-                        <div class="tel">
-                            <img src="./img/second/tel-logo.svg" alt="">
-                            <p>+998 90 123 45 67</p>
-                        </div>
-    
-                    </div>
-                    <h1>Xabar jo'natish</h1>
-                    <div class="forms">
-                        <form action="">
-                            <input type="text" placeholder="Ism familiyangizni kiriting...">
-                            <input type="text" placeholder="Telefon raqamingizni kiriting...">
-                        </form>
-                    </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Xabar matnini kiriting..."></textarea>
-                    <div class="last-btn">
-                        <button type="submit" class="request-btn">
-                            Jo'natish
-                        </button>
-                    </div>
-                </div>
-    
-    
-                <div class="location-card">
-                    <div>
-                        <img class="location-img" src="./img/second/manzil-img.svg" alt="">
-                        <h1>Manzil</h1>
-                    </div>
-                    <img src="./img/second/lokatsion-img.png" alt="">
-                </div>
+        </div>
+    </section>
+</header>
+
+<!-- main -->
+
+<main class="site-main">
+
+    <section>
+        <div class="container card-container">
+            <div class="card-images">
+
+                {% if flat_image %}
+                    <img src="{{ flat_image.url }}" alt="" width="570" height="400">
+                {% else %}
+                   <img src="{% static 'img/second/ijara-card-img.png' %}" alt="" width="570" height="400">
+                {% endif %}
+
             </div>
-        </section>
-    </main>
-
-    <!-- footer -->
-
-    <footer class="site-footer">
-        <div class="container footer-container">
-            <img class="footer-title" src="./img/first/MUSOFIRLAR.UZ.svg">
-            <ul class="footer-list">
-                <li class="footer-item"><a href="#">Bosh sahifa</a></li>
-                <li class="footer-item"><a href="#">Ijara uylar</a></li>
-                <li class="footer-item"><a href="#">O'zbek oshxonasi</a></li>
-                <li class="footer-item"><a href="#">Ish topish</a></li>
-                <li class="footer-item"><a href="#">Elchixonalar</a></li>
-            </ul>
-            <hr>
-    
-    
-            <ul class="footer-link">
-                <li class="footer-links"><a href="https://t.me/Murodov_Bakhtiyor"><i class="fab fa-telegram"></i></a></li>
-                <li class="footer-links"><a href="https://facebook.com/bakhtiyor.murodov1249"><i
-                            class="fab fa-facebook"></i></a></li>
-                <li class="footer-links"><a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
-                </li>
-    
-                <li class="footer-links"><a href="https://instagram.com/_baxtiyor.murodov_"><i
-                            class="fab fa-instagram"></i></a></li>
-                <li class="footer-links"><a href="https://twiter.com/BaxtiyorMurodo2"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="footer-links"><a href="https://www.linkedin.com/in/baxtiyor-murodov"><i class="fab fa-linkedin-in"></i></a></li>
-            </ul>
-            <div><img src="./img/first/footer-icon.png" alt="">
-                <span class="footer-text">
-                    Copyright 2021 All rigths reserved. Powered by <a
-                        href="https://saminjonovsanjarbek.github.io/Mdevs-team/">MDevs</a>
-                </span>
+            <div class="anons">
+                <h1>
+                    E'LON HAQIDA BATAFSIL
+                </h1>
+                <ul class="anons-list">
+                    <li class="anons-items"><img src="{% static 'img/first/card-location.svg' %}" alt="">
+                         {{ flat.country }}, {{ flat.city }}
+                        <hr>
+                    </li>
+                    <li class="anons-items"><img src="{% static 'img/first/dollar-icon.png' %}" alt="">
+                        {{ flat.price }}
+                        <hr>
+                    </li>
+                    <li class="anons-items"><img src="{% static 'img/first/home-icon.png' %}" alt="">
+                        {{ flat.room_count }} xonali
+                        <hr>
+                    <li>
+                    <li class="anons-items"><img src="{% static 'img/first/zina-icon.png' %}" alt="">
+                        {{ flat.floor }}
+                        <hr>
+                    </li>
+                    <li class="anons-items"><img src="{% static 'img/second/qoshish.svg' %}" alt=""> Qo'shimcha:
+                        <hr>
+                    </li>
+                    <li class="anons-items">
+                        <p>
+                            {{ flat.description }}
+                        </p>
+                        <hr>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>
+
+    </section>
+
+    <section class="location">
+        <div class="container location-container">
+            <div class="request">
+                <div class="request-logo">
+                    <div class="user-logo">
+                        <img class="logo-image" src="{% static 'img/second/user-logo.svg' %}" alt="" width="50" height="50">
+                        <div>
+                            <h1>{{ flat.author.first_name }}</h1>
+                            <p>{{ flat.created_at }}</p>
+                        </div>
+                    </div>
+                    <div class="tel">
+                        <img src="{% static 'img/second/tel-logo.svg' %}" alt="">
+                        <p>{{ flat.author.phone_number }}</p>
+                    </div>
+
+                </div>
+                <h1>Xabar jo'natish</h1>
+                <div class="forms">
+                    <form action="">
+                        <input type="text" placeholder="Ism familiyangizni kiriting...">
+                        <input type="text" placeholder="Telefon raqamingizni kiriting...">
+                    </form>
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Xabar matnini kiriting..."></textarea>
+                <div class="last-btn">
+                    <button type="submit" class="request-btn">
+                        Jo'natish
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="location-card">
+                <div>
+                    <img class="location-img" src="{% static 'img/second/manzil-img.svg' %}" alt="">
+                    <h1>Manzil</h1>
+                </div>
+                <img src="{% static 'img/second/lokatsion-img.png' %}" alt="">
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- footer -->
+
+<footer class="site-footer">
+    <div class="container footer-container">
+        <img class="footer-title" src="{% static 'img/first/MUSOFIRLAR.UZ.svg' %}">
+        <ul class="footer-list">
+            <li class="footer-item"><a href="{% url 'home' %}">Bosh sahifa</a></li>
+            <li class="footer-item"><a href="{% url 'flat_home' %}">Ijara uylar</a></li>
+            <li class="footer-item"><a href="{% url 'work_home' %}">Ish topish</a></li>
+            <li class="footer-item"><a href="{% url 'canteen_home' %}">O'zbek oshxonasi</a></li>
+            <li class="footer-item"><a href="{% url 'embassy_home' %}">Elchixonalar</a></li>
+        </ul>
+        <hr>
+
+
+        <ul class="footer-link">
+            <li class="footer-links"><a href="https://t.me/Murodov_Bakhtiyor"><i class="fab fa-telegram"></i></a></li>
+            <li class="footer-links"><a href="https://facebook.com/bakhtiyor.murodov1249"><i
+                    class="fab fa-facebook"></i></a></li>
+            <li class="footer-links"><a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+            </li>
+
+            <li class="footer-links"><a href="https://instagram.com/_baxtiyor.murodov_"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="footer-links"><a href="https://twiter.com/BaxtiyorMurodo2"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="footer-links"><a href="https://www.linkedin.com/in/baxtiyor-murodov"><i
+                    class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <div><img src="{% static 'img/first/footer-icon.png' %}" alt="">
+            <span class="footer-text">
+                    Copyright 2021 All rigths reserved. Powered by <a
+                    href="https://saminjonovsanjarbek.github.io/Mdevs-team/">MDevs</a>
+            </span>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
