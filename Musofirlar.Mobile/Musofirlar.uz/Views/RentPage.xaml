@@ -12,7 +12,7 @@
                HorizontalOptions="Center"
                VerticalOptions="Center"
                FontSize="18"/>
-        <WebView HeightRequest="1000" WidthRequest="1000" Source="http://musofirlar.pythonanywhere.com/mobile/flat" Navigated="webviewNavigated" Navigating="webviewNavigating" />
+        <WebView HeightRequest="1000" WidthRequest="1000" Source="https://musofirlar-mobile.netlify.app/flat" Navigated="webviewNavigated" Navigating="webviewNavigating" />
     </StackLayout>
     
 </ContentPage>
