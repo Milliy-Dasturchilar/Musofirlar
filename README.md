@@ -8,7 +8,7 @@ developed by [MDevs](https://saminjonovsanjarbek.github.io/Mdevs-team/)
 
 * Loyiha dizayni - [Figma](https://www.figma.com/file/msf4jB9lE4Dxm6OpRrxai1/Untitled?node-id=0%3A1)
 
-* Loyiha Frontend qismi - [Musofirlar.Frond](https://github.com/SanjarbekSaminjonov/Musofirlar/tree/main/Musofirlar.Frontend)
+* Loyiha Frontend qismi - [Musofirlar.Frontend](https://github.com/SanjarbekSaminjonov/Musofirlar/tree/main/Musofirlar.Frontend)
 
 * Loyiha Backend qismi - [Musofirlar.Website](https://github.com/SanjarbekSaminjonov/Musofirlar/tree/main/Musofirlar.Website)
 
