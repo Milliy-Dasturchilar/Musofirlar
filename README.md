@@ -1,5 +1,5 @@
 ---
-developed by [MDevs](https://saminjonovsanjarbek.github.io/Mdevs-team/)
+developed by [MDevs](http://mdevs.uz)
 ---
 
 # **Musofirlar platformasi**
